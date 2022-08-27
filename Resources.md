@@ -1,8 +1,8 @@
 # MongoDB Tutorial
 
 ## Prerequisites
--[MongoDB](https://www.mongodb.com/try/download/community)<br/>
--[MongoDB Compass](https://www.mongodb.com/try/download/compass) (Optional)
+- [MongoDB](https://www.mongodb.com/try/download/community)<br/>
+- [MongoDB Compass](https://www.mongodb.com/try/download/compass) (Optional)
 
 ## Running MongoDB Server
 1. Download The MongoDB installation Package, and install like usual
