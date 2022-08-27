@@ -78,7 +78,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 ## System Error. Please try again later.
 
 **Potential places for error**:
-- `Toggle Encryption| and `Use HTTPS` is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+- `Toggle Encryption` and `Use HTTPS` is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
 - Your server haven't started yet.
 - Port is wrong.
 
