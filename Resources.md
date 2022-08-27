@@ -197,7 +197,7 @@ A document in JSON view that has the Weapon ID 12503, level 90, ascension phase 
 # Connectivity
 
 ## Client connection & auth flowchart
-<a href="https://app.ponjo.club/af75-4dc-8e4aaf.png"><img src="https://app.ponjo.club/af75-4dc-8e4aaf.png" title="Flowchart" /></a>
+<a href="https://app.ponjo.club/af75-4dc-8e4aaf.png"><img src="https://i.imgur.com/W5vALBp.png" title="Flowchart" /></a>
 
 # In-Game
 
