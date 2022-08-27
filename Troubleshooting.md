@@ -78,10 +78,14 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 ## System Error. Please try again later.
 
 **Potential places for error**:
-- Toggle Encryption and Use HTTPS is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+- `Toggle Encryption| and `Use HTTPS` is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
 - Your server haven't started yet.
 - Port is wrong.
 
+**Solutions**:
+- Turn off `Toggle Encryption` and `Use HTTPS` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+- Start your server (obviously)
+- Use the default `443` for `localhost` and type the correct port when joining a experimental server. 
 
 ## Invalid Account Format.
 
