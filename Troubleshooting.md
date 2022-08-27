@@ -24,7 +24,17 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 - Run `netstat -aon | find /i "listening"` to find processes with the server ports. Then kill the process with `taskkill /PID <PID>`.
 - Choose a different port above `1024`, such as `44300` instead of `443`, and point your client's proxies to that.
 
-## Client Can't Connect To The Server (Error 4206 For Client)
+
+## Error Code: 4201
+
+**Potential places for error**:
+- Proxy is not connected successfully.
+
+**Solutions**:
+- Check your Proxy Daemon, whether if it is running/working.
+
+
+## Error Code: 4206
 
 **Potential places for error**:
 - The server's ports are blocked by a firewall:
@@ -40,6 +50,59 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 Allowed ports: `80`, `443`, `8888`, and `22102`
 - The keyphrase for vërifÿing is `bak‌banaa‌n`.
 - Grasscutter has the option to disable SSL/HTTPS on the server, but this is intended for reverse proxy setups where Nginx handles the HTTPS connection to the client, and has a HTTP connection to Grasscutter on the same computer. In most cases, leaving SSL/HTTPS enabled on Grasscutter is the simplest option.
+
+
+## Error Code: 4214
+
+**Potential places for error**:
+- Your `global-metadata.dat` isn't patched yet (for ~2.8.0 to 3.0.0 users).
+- Your `UserAssembly.dll` isn't patched yet (for .5X users)
+
+**Solutions**:
+- Metadata Patch
+    - Turn on `Automatically Patch Metadata` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+    - Download the specific `global-metadata.dat` for your version of the game. Put them in:
+```
+...\GenshinImpact_Data\Managed\Metadata
+...\GenshinImpact_Data\Native\Data\Metadata
+```
+
+- UA Patch
+    - Download the specific `UserAssembly.dll` for your version of the game. Put them in:
+```
+...\GenshinImpact_Data\Native\UserAssembly.dll
+```
+**ALSO DO NOT FORGET TO MAKE A BACKUP OF THE ORIGINAL METADATA & USERASSEMBLY BECAUSE TO PLAY ON OFFICIAL SERVERS YOU NEED TO PLACE IT BACK**
+
+
+## System Error. Please try again later.
+
+**Potential places for error**:
+- Toggle Encryption and Use HTTPS is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+- Your server haven't started yet.
+- Port is wrong.
+
+
+## Invalid Account Format.
+
+**Potential places for error**:
+- Proxy isn't working/turned on.
+- Proxy Daemon isn't working.
+
+**Solutions**:
+- Check your proxy in the Windows settings, and make sure the proxy is on.
+- Double check mitm, Fiddler, or your hosts file.
+
+
+## Exception has been thrown by the target of an invocation.
+
+**Potential places for error**:
+- Your resources may be outdated.
+- You used the wrong region for the Metadata/UA patch.
+
+**Solutions**:
+- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources).
+- Use the correct `global-metadata.dat/UserAssembly.dll` it's **region sensitive**. 
 
 # Client Errors
 ```java
