@@ -1,22 +1,22 @@
 # Prerequisites
-- [MongoDB](https://www.mongodb.com/try/download/community) , [MongoDB Tutorial](https://github.com/Grasscutters/Grasscutter/wiki/MongoDB-Tutorial)
+- [MongoDB](https://www.mongodb.com/try/download/community), [MongoDB Tutorial](https://github.com/Grasscutters/Grasscutter/wiki/Resources#mongodb-tutorial)
 - [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 # Starting the Server
-**If you haven't already, download a release JAR from [releases](https://github.com/Grasscutters/Grasscutter/releases) or [build the server yourself](https://github.com/Grasscutters/Grasscutter/wiki/Building)**.
+**If you haven't already, download `grasscutter.jar` from [actions](https://github.com/Grasscutters/Grasscutter/releases)/[Jenkins](https://jenkins.4benj.com/job/Grasscutters/job/Grasscutter/lastSuccessfulBuild/) or [build the server by yourself](https://github.com/Grasscutters/Grasscutter/wiki/Building)**.
 
 1. Run `java -jar grasscutter.jar`
-   1. This will create additional directories in your working directory.
+   - This will create additional directories in your working directory.
 2. Copy the following files to the following directories: (file source -> `destination`)
-   1. [Resources](https://github.com/Koko-boya/Grasscutter_Resources) -> `resources`
-   2. [The Keystore File](https://github.com/Grasscutters/Grasscutter/blob/main/keystore.p12) -> `keystore.p12`
-   3. **Note**: If you are running in the project's root directory (ie. you cloned the repo from GitHub and you are running the server in that folder), these files will be already be present.
+   - [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources) -> `resources`
+   - [The Keystore File](https://github.com/Grasscutters/Grasscutter/blob/main/keystore.p12) -> `keystore.p12`
+   - **Note**: If you are running in the project's root directory (ie. you cloned the repo from GitHub and you are running the server in that folder), these files will be already be present.
 3. Run `java -jar grasscutter.jar -handbook`
-   1. This is required for using `names -> IDs` in commands.
-   2. This setup is optional and can be skipped.
+   - This is required for using `names -> IDs` in commands.
+   - This setup is optional and can be skipped.
 4. Make sure to setup your operating system firewall settings
-   1.Windows: Make Sure To Allow Their Port On Windows Firewall Settings (80,443,8888, And 22102)<br/>
-   2.Linux: Make Sure To Write `sudo ufw allow 22102` , `sudo ufw allow 443` , `sudo ufw allow 80` , And `sudo ufw allow 8888` .<br/>
+   - Windows: Make sure to allow their port on Windows Firewall Settings (80, 443, 8888, and 22102)
+   - Linux: Make sure to write `sudo ufw allow 22102`, `sudo ufw allow 443`, `sudo ufw allow 80`, and `sudo ufw allow 8888` .
 4. Run `java -jar grasscutter.jar`
    1. (kinda obvious but) Leave this running in the background.
 5. Continue to [Connecting](#connecting)
@@ -25,10 +25,10 @@
 **Note**: This works for connecting to external servers as well.
 
 ## Prerequisites
-- [Fiddler Classic](https://www.telerik.com/download/fiddler) (or another proxy to redirect web traffic)
+- [mitmproxy](https://mitmproxy.org/), [Fiddler Classic](https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe), [Hosts file](https://github.com/Grasscutters/Grasscutter/wiki/Resources#hosts-file) (or another proxy to redirect web traffic)
 
-1. Run your web traffic proxy (eg. Fiddler)
-2. Route all traffic going to HoYoVerse/MiHoYo servers to the server host.
+1. Run your choosen web traffic proxy.
+2. Route all traffic going to HoYoVerse/MiHoYo servers using [mitmproxy](https://github.com/Grasscutters/Grasscutter#:~:text=mitmdump:), [Fiddler](https://github.com/Grasscutters/Grasscutter#:~:text=Fiddler%20Classic:) or [Hosts file](https://github.com/Grasscutters/Grasscutter/wiki/Resources#hosts-file) to the server host.
 3. Launch Genshin Impact and have fun!
 
 ## [Traffic Route Map](https://github.com/Grasscutters/Grasscutter/issues/1447)
