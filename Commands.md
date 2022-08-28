@@ -86,3 +86,13 @@ To set BP level: `prop <bplevel|bp|battlepass> <level>`
 And world level: `prop <worldlevel|wl> <level>`
 
 AR: `prop player_level <level>`
+
+### Some essential commands:
+
+/give all x5 lv90 r5
+!prop unlockmap 1
+!prop godmode 1
+!prop unlimitedenergy 1
+!give 202 99999999
+!give 102 99999999
+!give 101 99999999
