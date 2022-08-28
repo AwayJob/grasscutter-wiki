@@ -1,4 +1,4 @@
-# Commands
+give all c6 r5 lvl90 x5# Commands
 
 You might want to use the handbook generation command (`java -jar grasscutter.jar -handbook`) in a terminal that is in a Grasscutter installation. 
 It will generate the handbook (GM Handbook.txt) where you can find IDs for enemies/items/etc.
@@ -86,7 +86,7 @@ prop player_level <level> # To set AR level
 
 ### Some *essential* commands
 ```yml
-give all x5 lv90 r5 # Gives all items/weapons max level and refinement
+give all c6 r5 lvl90 x5 # Gives all characters/items/weapons max level and refinement
 prop unlockmap 1 # Unlocks the whole map
 prop godmode 1 # Activates Godmode
 prop unlimitedenergy 1 # Activates Unlimited energy
