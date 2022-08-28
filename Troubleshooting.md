@@ -44,7 +44,7 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 **Solutions**:
 - Use the correct file name instead of `grasscutter.jar`.
 - Locate your grasscutter folder and open the command prompt there or navigate using the command `cd` to your grasscutter folder. 
-- Build grasscutter first with `gradlew jar`. Make sure to follow the installation instructions in the [README](https://github.com/Grasscutters/Grasscutter#building)/[Wiki](https://github.com/Grasscutters/Grasscutter/wiki/Building) properly. 
+- Build grasscutter first with `gradlew jar`. Make sure to follow the installation instructions in the [README](https://github.com/Grasscutters/Grasscutter#building)/[Wiki](https://github.com/Grasscutters/Grasscutter/wiki/Building) properly or download the `grasscutter.jar` from [actions](https://github.com/Grasscutters/Grasscutter/actions/workflows/build.yml)/[4benji](https://jenkins.4benj.com/job/Grasscutters/job/Grasscutter/lastSuccessfulBuild/). 
  
  
 ## MongoSocketOpenException, Connection refused, Exception opening socket, ECONNREFUSED
