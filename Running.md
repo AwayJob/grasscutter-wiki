@@ -3,7 +3,7 @@
 - [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 # Starting the Server
-**If you haven't already, download `grasscutter.jar` from [actions](https://github.com/Grasscutters/Grasscutter/actions/workflows/build.yml)/[Jenkins](https://jenkins.4benj.com/job/Grasscutters/job/Grasscutter/lastSuccessfulBuild/) or [build the server by yourself](https://github.com/Grasscutters/Grasscutter/wiki/Building)**.
+**If you haven't already, download `grasscutter.jar` from [actions](https://github.com/Grasscutters/Grasscutter/actions/workflows/build.yml)/[4benji](https://jenkins.4benj.com/job/Grasscutters/job/Grasscutter/lastSuccessfulBuild/) or [build the server by yourself](https://github.com/Grasscutters/Grasscutter/wiki/Building)**.
 
 1. Run `java -jar grasscutter.jar`
    - This will create additional directories in your working directory.
