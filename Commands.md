@@ -1,4 +1,4 @@
-give all c6 r5 lvl90 x5# Commands
+# Commands
 
 You might want to use the handbook generation command (`java -jar grasscutter.jar -handbook`) in a terminal that is in a Grasscutter installation. 
 It will generate the handbook (GM Handbook.txt) where you can find IDs for enemies/items/etc.
