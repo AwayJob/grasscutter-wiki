@@ -84,8 +84,10 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 
 **Solutions**:
 - Turn off `Toggle Encryption` and `Use HTTPS` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
-- Start your server (obviously)
-- Use the default `443` for `localhost` and type the correct port when joining a experimental server. 
+- Use the default `443` for `localhost` or type the correct port when joining a experimental server. (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+- Start your server (obviously).
+- Check your proxy settings. 
+
 
 ## Invalid Account Format.
 
