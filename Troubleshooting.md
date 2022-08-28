@@ -19,7 +19,7 @@ Specify the correct version using:
 - Make sure you have [java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed or [add it to PATH manually](https://www.java.com/en/download/help/path.html).
  
  
-## Address already in use: bind / java.net.BindException
+## Address already in use: bind, java.net.BindException
 This error is derived from the server being unable to bind to a certain port.
 The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
  
@@ -54,7 +54,16 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
  
 **Solutions**:
 - Start `mongod.exe` in `C:\Program Files\MongoDB\Server\<version>\bin`
- 
+
+## Cannot invoke "emu.grasscutter.game.home.HomeSeceneItem.getRoomSceneID()" because "homeScene" is null
+
+**Potential places for error**:
+- You went into the teapot.
+
+**Solutions**:
+- Your account is softlocked, make a new one.
+- You could try editing `homeroomscene` in mongodb but if you go into teapot again it will softlock.
+
 # Client Errors
  
 ## Error Code: 4201
