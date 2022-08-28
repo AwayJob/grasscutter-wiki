@@ -10,7 +10,7 @@ There is a dummy user named "Server" in every player's friends list that you can
 Commands also work in other chat rooms, such as private/team chats. to run commands in-game, you need to append a prefix `/` or `!` to your messages. (ex. `/pos`)
 
 ### Targeting
- 1. For commands that target a player, you can specify a target UID with `@UID` as an argument in any position.
+ 1. For commands that target a player, you can specify a target UID with `@UID` as an argument in any position. (ex. `@1001`)
  2. If you message a valid command at another player (instead of at the "Server" virtual player), they will be the set target for that command if you haven't already set the target.
  3. If none of the above apply, it will default to the target you previously set using: `/target <UID>`.
  4. If none of the above *still* apply, you will be the target of the command. If you are entering the command from the server console, **it will not work**!
@@ -74,26 +74,23 @@ To give all items, do `give <all|weapons|mats|avatars> [x<amount>]`. The above k
 
 The artifact syntax is `give <artifactId> [mainPropId] [<appendPropId>[,<times>]]...`. `x<amount>` and `lv<level>` work with this, and note that this uses levels of 0-20 to match displayed in-game numbers rather than 1-21, though it won't complain if you feed it `lv21`.
 
-### SetProp command
-`prop <godmode|nostamina|unlimitedenergy> <on|off|toggle|1|0>` replaces the old `godmode`, `nostamina`, `unlimitenergy` commands.
-
-`prop <god|ns|ue> <value>` are the shortest aliases for them.
-
-`prop abyss 12` replaces `unlocktower`. Full syntax is `prop <abyss|abyssfloor|ut|tower|towerlevel|unlocktower> <floor to unlock>` 
-
-To set BP level: `prop <bplevel|bp|battlepass> <level>`
-
-And world level: `prop <worldlevel|wl> <level>`
-
-AR: `prop player_level <level>`
-
-### Some *essential* commands:
+### SetProp commands
 ```yml
-give all x5 lv90 r5         # Gives all items/weapons max level and refinement
-prop unlockmap 1            # Unlocks the whole map
-prop godmode 1              # Activates Godmode
-prop unlimitedenergy 1      # Activates Unlimited energy
-give 202 99999999           # Gives Mora EXP
-give 102 99999999           # Gives Adventure EXP
-give 101 99999999           # Gives Character EXP
+prop <godmode|nostamina|unlimitedenergy> <on|off|toggle|1|0> # replaces the old `godmode`, `nostamina`, `unlimitenergy` commands.
+prop <god|ns|ue> <value> # the shortest aliases for them.
+prop <abyss|abyssfloor|ut|tower|towerlevel|unlocktower> <floor to unlock> # `prop abyss 12` replaces `unlocktower`
+prop <bplevel|bp|battlepass> <level>  # To set BP level
+prop <worldlevel|wl> <level> # To set world level
+prop player_level <level> # To set AR level
+```
+
+### Some *essential* commands
+```yml
+give all x5 lv90 r5 # Gives all items/weapons max level and refinement
+prop unlockmap 1 # Unlocks the whole map
+prop godmode 1 # Activates Godmode
+prop unlimitedenergy 1 # Activates Unlimited energy
+give 202 <amount> # Gives Mora EXP
+give 102 <amount> # Gives Adventure EXP
+give 101 <amount> # Gives Character EXP
 ```
