@@ -87,12 +87,13 @@ And world level: `prop <worldlevel|wl> <level>`
 
 AR: `prop player_level <level>`
 
-### Some essential commands:
-
-/give all x5 lv90 r5
-!prop unlockmap 1
-!prop godmode 1
-!prop unlimitedenergy 1
-!give 202 99999999
-!give 102 99999999
-!give 101 99999999
+### Some *essential* commands:
+```yml
+give all x5 lv90 r5         # Gives all items/weapons max level and refinement
+prop unlockmap 1            # Unlocks the whole map
+prop godmode 1              # Activates Godmode
+prop unlimitedenergy 1      # Activates Unlimited energy
+give 202 99999999           # Gives Mora EXP
+give 102 99999999           # Gives Adventure EXP
+give 101 99999999           # Gives Character EXP
+```
