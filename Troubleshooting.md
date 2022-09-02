@@ -6,7 +6,7 @@ Gradle is using the wrong version of Java/the JDK.
  
 **Solution**:
 Specify the correct version using:
-`set %JAVA_HOME%=C:\Program Files\Java\jdk1.8.0_202`
+`set %JAVA_HOME%=C:\Program Files\Java\jdk-XX.X.X.X`
  
 # Server Console Errors
  
@@ -21,10 +21,10 @@ Specify the correct version using:
 ## [Dispatch] No SSL cert found! Falling back to HTTP server. 
 
 **Potential places for error**:
-- No SSL cert, you're missing essential files from the repo.
+- No SSL cert, you're missing essential files from the repository.
 
 **Solutions**:
-- Download the whole [repository](https://github.com/Grasscutters/Grasscutter).
+- Download the whole [repository](https://github.com/Grasscutters/Grasscutter) properly.
 
 
 ## Address already in use: bind, java.net.BindException
@@ -79,10 +79,11 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 **Potential places for error**:
 - Cetificate Issue/You didn't installed the certificate. 
 - Server not started right/not accessible/not configured correctly if fiddler is set up correctly.
+- No SSL cert, you're missing essential files from the repository.
 
 **Solutions**:
 - Go to `tools > options > https > actions button > Root Trust Cert`
-- No SSL cert you're missing essential files from the repo. Download the whole repo. 
+- Download the whole [repository](https://github.com/Grasscutters/Grasscutter) properly.
 
 
 ## Error Code: 4201
