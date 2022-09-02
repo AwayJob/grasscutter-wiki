@@ -186,7 +186,17 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
  
 **Solutions**:
 - Enter `/permission add <username> *` in your grasscutter console. 
- 
+
+
+# Other Issues
+
+## The Game doesn't open
+
+**Potential places for error**:
+- You patched the game with the wrong Metadata / UserAssembly version. (i.e. You used 2.8 Metadata Patch instead of 3.0.)
+
+**Solutions**:
+- Make sure and download the correct Metadata / UserAssembly patch. 
  
 # Client Errors
 ```java
