@@ -1,13 +1,17 @@
 # Build Errors
  
 ## Gradle: Could not initialize class...
-Gradle is using the wrong version of Java/the JDK.
+
+**Potential places for error**:
+- Gradle is using the wrong version of Java/the JDK.
 [Error Example](https://media.discordapp.net/attachments/965284036333424722/965743823445696552/11.png)
  
 **Solution**:
-Specify the correct version using:
-`set %JAVA_HOME%=C:\Program Files\Java\jdk-XX.X.X.X`
- 
+- Specify the correct version using:
+```cmd
+set %JAVA_HOME%=C:\Program Files\Java\jdk-XX.X.X.X
+``` 
+
 # Server Console Errors
  
 ## ...not recognized as an internal or external command. 
