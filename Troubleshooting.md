@@ -4,7 +4,8 @@
 
 **Potential places for error**:
 - Gradle is using the wrong version of Java/the JDK.
-[Error Example](https://media.discordapp.net/attachments/965284036333424722/965743823445696552/11.png)
+- Error Example:
+![lol](https://media.discordapp.net/attachments/965284036333424722/965743823445696552/11.png)
  
 **Solution**:
 - Specify the correct version using:
@@ -82,11 +83,11 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 
 **Potential places for error**:
 - Cetificate Issue/You didn't installed the certificate. 
-- Server not started right/not accessible/not configured correctly if fiddler is set up correctly.
+- Server not started right/not accessible/not configured correctly if Fiddler is set up correctly.
 - No SSL cert, you're missing essential files from the repository.
 
 **Solutions**:
-- Go to `tools > options > https > actions button > Root Trust Cert`
+- In Fiddler, go to `Tools Tab -> Options -> HTTPS Tab -> Actions Button -> Trust Root Certificate`.
 - Download the whole [repository](https://github.com/Grasscutters/Grasscutter) properly.
 
 
@@ -126,6 +127,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 **Solutions**:
 - Metadata Patch
     - Turn on `Automatically Patch Metadata` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
+        - **Note:** Don't use Cultivation to Metadata patch .5X versions.
     - Download the specific `global-metadata.dat` for your version of the game. Put them in:
 ```
 ...\GenshinImpact_Data\Managed\Metadata
@@ -137,7 +139,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 ```
 ...\GenshinImpact_Data\Native\UserAssembly.dll
 ```
-**ALSO DO NOT FORGET TO MAKE A BACKUP OF THE ORIGINAL METADATA & USERASSEMBLY BECAUSE TO PLAY ON OFFICIAL SERVERS YOU NEED TO PLACE IT BACK**
+**ALSO DO NOT FORGET TO MAKE A BACKUP OF THE ORIGINAL METADATA / USERASSEMBLY BECAUSE TO PLAY ON OFFICIAL SERVERS YOU NEED TO PLACE IT BACK**
  
  
 ## System Error. Please try again later.
@@ -173,7 +175,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
  
 **Solutions**:
 - Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources).
-- Use the correct `global-metadata.dat/UserAssembly.dll` it's **region sensitive**. 
+- Use the correct `global-metadata.dat / UserAssembly.dll` it's **region sensitive**. 
  
 # In-game Errors
  
