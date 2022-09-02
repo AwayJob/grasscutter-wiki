@@ -18,7 +18,15 @@ Specify the correct version using:
 **Solutions**:
 - Make sure you have [java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed or [add it to PATH manually](https://www.java.com/en/download/help/path.html).
  
- 
+## [Dispatch] No SSL cert found! Falling back to HTTP server. 
+
+**Potential places for error**:
+- No SSL cert, you're missing essential files from the repo.
+
+**Solutions**:
+- Download the whole [repository](https://github.com/Grasscutters/Grasscutter).
+
+
 ## Address already in use: bind, java.net.BindException
 This error is derived from the server being unable to bind to a certain port.
 The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
@@ -65,7 +73,18 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 - You could try editing `homeroomscene` in mongodb but if you go into teapot again it will softlock.
 
 # Client Errors
- 
+
+## Server busy. Please try again later.(502)
+
+**Potential places for error**:
+- Cetificate Issue/You didn't installed the certificate. 
+- Server not started right/not accessible/not configured correctly if fiddler is set up correctly.
+
+**Solutions**:
+- Go to `tools > options > https > actions button > Root Trust Cert`
+- No SSL cert you're missing essential files from the repo. Download the whole repo. 
+
+
 ## Error Code: 4201
  
 **Potential places for error**:
