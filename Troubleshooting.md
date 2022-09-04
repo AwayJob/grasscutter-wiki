@@ -156,7 +156,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 - Check your proxy settings. 
  
  
-## Invalid Account Format.
+## Invalid Account Format. / Account or password error
  
 **Potential places for error**:
 - Proxy isn't working/turned on.
