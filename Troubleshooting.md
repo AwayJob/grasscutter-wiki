@@ -29,7 +29,7 @@ set %JAVA_HOME%=C:\Program Files\Java\jdk-XX.X.X.X
 - No SSL cert, you're missing essential files from the repository.
 
 **Solutions**:
-- Download the whole [repository](https://github.com/Grasscutters/Grasscutter) properly.
+- Download `keystore.p12` in the [repository](https://github.com/Grasscutters/Grasscutter) properly. 
 
 
 ## Address already in use: bind, java.net.BindException
