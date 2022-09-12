@@ -88,7 +88,7 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 
 **Solutions**:
 - In Fiddler, go to `Tools Tab -> Options -> HTTPS Tab -> Actions Button -> Trust Root Certificate`.
-- Download the whole [repository](https://github.com/Grasscutters/Grasscutter) properly.
+- Download `keystore.p12` in the [repository](https://github.com/Grasscutters/Grasscutter) properly. 
 
 
 ## Error Code: 4201
