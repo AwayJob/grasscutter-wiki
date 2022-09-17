@@ -1,3 +1,5 @@
+> Ctrl + F is your friend :)
+
 # Build Errors
  
 ## Gradle: Could not initialize class...
@@ -68,7 +70,7 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 **Solutions**:
 - Start `mongod.exe` in `C:\Program Files\MongoDB\Server\<version>\bin`
 
-## Cannot invoke "emu.grasscutter.game.home.HomeSeceneItem.getRoomSceneID()" because "homeScene" is null
+## Cannot invoke "emu.grasscutter.game.home.HomeSceneItem.getRoomSceneID()" because "homeScene" is null
 
 **Potential places for error**:
 - You went into the teapot.
@@ -148,12 +150,14 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 - `Toggle Encryption` and `Use HTTPS` is on (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
 - Your server haven't started yet.
 - Port is wrong.
+- Your server is outdated.
  
 **Solutions**:
 - Turn off `Toggle Encryption` and `Use HTTPS` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
 - Use the default `443` for `localhost` or type the correct port when joining a experimental server. (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
 - Start your server (obviously).
-- Check your proxy settings. 
+- Ensure your Windows proxy settings are being set to manual.
+- Ensure you are on a latest version client with a latest version server (your server logs will show "Game Version: X.X" near the top, if they don't then your server is WAY too old, make sure you're downloading the latest grasscutter).
  
  
 ## Invalid Account Format. / Account or password error
@@ -186,6 +190,20 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
  
 **Solutions**:
 - Enter `/permission add <username> *` in your grasscutter console. 
+
+
+## Update Resources: Failed to load resources. Click "Confirm" and restart download? (Return to the main menu)
+
+**Error Example:**
+![](https://i.imgur.com/ZQl3Dxn.png)
+
+**Potential places for error**:
+- Outdated resources.
+- Trying to use banners that are beyond your version.
+ 
+**Solutions**:
+- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources).
+- Use the correct `banners.json` for your specific version.
 
 
 # Other Issues
