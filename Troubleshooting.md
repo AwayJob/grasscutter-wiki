@@ -160,6 +160,16 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 **ALSO DO NOT FORGET TO MAKE A BACKUP OF THE ORIGINAL METADATA / USERASSEMBLY BECAUSE TO PLAY ON OFFICIAL SERVERS YOU NEED TO PLACE IT BACK**
  
  
+## The password format is invalid. The password must be between 8-30 digits, and contain two or more combinations of numbers, uppercase and lowercase letters, and English special characters.
+
+**Potential places for error**:
+- Your proxy is off/not connected.
+- You forgot to restore the original Metadata file.
+
+**Solutions**:
+- Turn on your proxy properly.
+- Replace the patch with the original one if you want to play on official servers.
+
 ## System Error. Please try again later.
  
 **Potential places for error**:
