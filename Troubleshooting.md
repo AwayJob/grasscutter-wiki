@@ -1,14 +1,17 @@
 > Ctrl + F is your friend :)
 
+> Thanks to Thoronium and others for the solutions.
+
 # Build Errors
  
 ## Gradle: Could not initialize class...
 
+**Error Example:**
+![lol](https://media.discordapp.net/attachments/965284036333424722/965743823445696552/11.png)
+
 **Potential places for error**:
 - Gradle is using the wrong version of Java/the JDK.
-- Error Example:
-![lol](https://media.discordapp.net/attachments/965284036333424722/965743823445696552/11.png)
- 
+
 **Solution**:
 - Specify the correct version using:
 ```cmd
@@ -23,7 +26,7 @@ set %JAVA_HOME%=C:\Program Files\Java\jdk-XX.X.X.X
 - You don't have java in your PATH.
 
 **Solutions**:
-- Make sure you have [java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed or [add it to PATH manually](https://www.java.com/en/download/help/path.html).
+- Make sure you have [java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed and [add it to PATH manually](https://www.java.com/en/download/help/path.html).
  
 ## [Dispatch] No SSL cert found! Falling back to HTTP server. 
 
@@ -69,6 +72,19 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
  
 **Solutions**:
 - Start `mongod.exe` in `C:\Program Files\MongoDB\Server\<version>\bin`
+
+
+## <ERROR:ResourceLoader> Error loading resource file: [...] java.io.FileNotFoundException: .\resources\... (The system cannot find the path specified)
+
+**Potential places for error**:
+- You are missing resources.
+
+**Solutions**:
+- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources).
+- Make sure the path to your resources is like this:
+```
+.\grasscutter\resources\BinOutput, ExcelBinOutput etc.
+```
 
 ## Cannot invoke "emu.grasscutter.game.home.HomeSceneItem.getRoomSceneID()" because "homeScene" is null
 
@@ -129,7 +145,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 **Solutions**:
 - Metadata Patch
     - Turn on `Automatically Patch Metadata` (for [Cultivation](https://github.com/Grasscutters/Cultivation)).
-        - **Note:** Don't use Cultivation to Metadata patch .5X versions.
+        - **Note:** Don't use Cultivation to patch .5X versions.
     - Download the specific `global-metadata.dat` for your version of the game. Put them in:
 ```
 ...\GenshinImpact_Data\Managed\Metadata
@@ -178,7 +194,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 - You used the wrong region for the Metadata/UA patch.
  
 **Solutions**:
-- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources).
+- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources).
 - Use the correct `global-metadata.dat / UserAssembly.dll` it's **region sensitive**. 
  
 # In-game Errors
@@ -202,7 +218,7 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 - Trying to use banners that are beyond your version.
  
 **Solutions**:
-- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [Koko-boya](https://github.com/Koko-boya/Grasscutter_Resources).
+- Download the latest resources from [yukiz](https://gitlab.com/yukiz/GrasscutterResources/) or [tamilpp25](https://github.com/tamilpp25/Grasscutter_Resources).
 - Use the correct `banners.json` for your specific version.
 
 
@@ -215,7 +231,25 @@ Allowed ports: `80`, `443`, `8888`, and `22102`
 
 **Solutions**:
 - Make sure and download the correct Metadata / UserAssembly patch. 
- 
+    - Note: 2.8.0 to 3.0.0 uses Metadata patch while 3.0.5X+ uses UA patch **(Don't ask beta support in the Grasscutter Discord Server)**.
+
+
+# Cultivation
+
+## Trust Certificate
+
+**Solutions**:
+- Go to `%appdata%\cultivation\ca` and double click on cert. Click on install. Select `local machine` and hit next. Select `Place certificate in the following store`, select `Trusted Root Certificate Authorities` and hit next until the cert is imported successfully.
+
+## Cultivation could not patch metadata!
+
+**Solutions**:
+- Ensure you are running as admin.
+- Ensure your game path is set properly.
+- Repair your game in the official launcher, it must be on latest version.
+- Do an metadata restore.
+- Clear out `%appdata%/cultivation/metadata`  after the metadata restore you just did.
+
 # Client Errors
 ```java
 DISPATCH_GLOBAL_GET_TIMEOUT = 4201;
