@@ -74,7 +74,7 @@ The server uses ports: `80`, `443`, `8888`, and `22102` (by default)
 - Start `mongod.exe` in `C:\Program Files\MongoDB\Server\<version>\bin`
 
 
-## <ERROR:ResourceLoader> Error loading resource file: [...] java.io.FileNotFoundException: .\resources\... (The system cannot find the path specified)
+## `<ERROR:ResourceLoader>` Error loading resource file: [...] java.io.FileNotFoundException: .\resources\... (The system cannot find the path specified)
 
 **Potential places for error**:
 - You are missing resources.
